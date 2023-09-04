@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="/Home/icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <header>
+            <div id="slide-header">
+                <div class="text-slide">
+                    <p>TRẢ HÀNG DỄ DÀNG</p>
+                    <!-- <p>Giao hàng miễn phí dành cho các hội viên</p> -->
+                    <input type="checkbox" id="icon-checked" class="checked-icon" checked hidden>
+                    <div class="content-slide-header">
+                        <div class="icon-exit">
+                            <label for="icon-checked">
+                                <i class="fa-solid fa-xmark"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <label for="icon-checked" class="label-checked">
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </label>
+
+                    <label for="icon-checked" class="overlay"></label>
+                </div>
+            </div>
+            <div id="header">
+                <div ca></div>
+                <div class="header-top">
+                    <ul>
+                        <li><a href="">trợ giúp</a></li>
+                        <li><a href="">theo dõi đơn hàng</a></li>
+                        <li><a href="">đăng ký hội viên</a></li>
+                        <li><a href="">adiclub</a></li>
+                        <li><a href="">đăng nhập</a></li>
+                    </ul>
+                </div>
+                <div class="header-home">
+                    <div class="logo">
+                        <img src="https://www.adidas.com.vn/static/glass/landing-app/adidas-landing-app/adidas-favicon.ico" alt="">
+                    </div>
+                    <div class="header-menu">
+                        <nav>
+                            <ul class="subnav" >
+                                <li><a href=""><b>NAM</b></a></li>
+                                <li><a href=""><b>NỮ</b></a></li>
+                                <li><a href=""><b>TRẺ EM</b></a></li>
+                                <li><a href="">THỂ THAO</a></li>
+                                <li><a href="">CÁC NHÃN HIỆU</a></li>
+                                <li><a href="">SẮP & MỚI NHẤT</a></li>
+                                <li><a href=""><b>GIẢM GIÁ</b></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-search-icon">
+                        <input type="text" placeholder="Tìm kiếm">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <div class="icon">
+                            <a href=""><i class="fa-regular fa-user"></i></a>
+                            <a href=""><i class="fa-regular fa-heart"></i></a>
+                            <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section>
+        <div id="slide">
+            <div class="img">
+                <img src="./img/football-fw23-real-madrid-third-plp-mh-mini-v1-d_tcm337-1051340.avif" alt="">
+            </div>
+            <div class="img">
+                <img src="./img/football-ss23-arsenal-third-plp-mh-mini-d_tcm337-1053663.avif" alt="">
+            </div>
+            <div class="img">
+                <img src="./img/football-ss23-juventus-away-plp-mh-mini-dnew_tcm337-1035986.avif" alt="">
+            </div>
+            <div class="img">
+                <img src="./img/football-ss23-manchesterunited-third-plp-mh-mini-d_tcm337-1046830.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
