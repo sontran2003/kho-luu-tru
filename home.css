@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap'); html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Nunito Sans', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration:none;
+	color: #000;
+}
+
+:root{
+	--primary-background-color:#000;
+	--primary-text-color:#fff;
+
+}
+
+section header #slide-header{
+	height: 40px;
+}
+
+section header #slide-header .text-slide{
+	display: flex;
+	justify-content: center;
+	line-height: 40px;
+	background-color: var(--primary-background-color);
+}
+
+section header #slide-header .text-slide p{
+	font-size:11px;
+	font-weight: bold;
+	color:var(--primary-text-color);
+	letter-spacing: 2px;
+}
+
+section header #slide-header .text-slide .label-checked i{
+	color: var(--primary-text-color);
+	position: relative;
+	top: 0px;
+	left: 10px;
+	cursor: pointer;
+}
+
+section header #slide-header .text-slide .overlay{
+	position: fixed;
+	inset: 0 ;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity, visibility;
+	transition-duration: .2s ;
+}
+
+section header #slide-header .text-slide .content-slide-header{
+	position: fixed;
+	inset: 0 0 auto 0;
+	height: 305px;
+	background: var(--primary-text-color);
+	z-index: 1;
+	transform: translateY(-100%);
+	transition: transform .2s linear;
+}
+
+section header #slide-header .text-slide .checked-icon:checked  ~ .content-slide-header{
+	transform: translateY(0);
+}
+section header #slide-header .text-slide .checked-icon:checked ~ .overlay{
+	opacity: 1; 	
+	visibility: visible;
+}
+
+section header #slide-header .text-slide .content-slide-header .icon-exit{
+	display: flex;
+	padding-top: 20px;
+	padding-right: 20px;
+	justify-content: flex-end;
+}
+
+section header #slide-header .text-slide .content-slide-header .icon-exit label i {
+	font-size: 30px;
+	border: 1px solid;
+	padding: 10px 15px 10px 15px;
+	cursor: pointer;
+}
+section header #header{
+	padding-left: 40px;
+    padding-right: 40px;
+    line-height: 24px;;
+}
+section header #header .header-top{
+	width: 1823px;
+}
+section header #header .header-top ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+	margin: 0 30px;
+}
+section header #header .header-top ul li{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+section header #header .header-top ul li a{
+	font-size: 12px;
+}
+section header #header .header-home{
+	width: 1823px;
+	display: grid;
+    grid-template-columns: 292px 1100px 430px;
+	border-bottom: 1px solid #fff;
+	margin:0 auto;
+}
+section header #header .header-home .header-menu{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section header #header .header-home .header-menu nav .subnav{
+	display: flex;
+    justify-content: center;
+}
+
+section header #header .header-home .header-menu nav .subnav li{
+	padding-left:10px ;
+	padding-right:10px ;
+}
+
+section header #header .header-home .header-menu nav .subnav li:nth-child(1){
+	font-size: 14px;
+	Color:#000000;
+	font-weight: bold;
+}
+
+section header #header .header-home .header-menu nav .subnav li:nth-child(2){
+	Color:#000000;
+	font-weight: bold;
+}
+section header #header .header-home .header-menu nav .subnav li:nth-child(3){
+	Color:#000000;
+	font-weight: bold;
+}
+section header #header .header-home .header-menu nav .subnav li:nth-child(7){
+	Color:#000000;
+	font-weight: bold;
+}
+
+section header #header .header-home .header-menu nav .subnav li a{
+	font-size: 14px;
+	letter-spacing: 2px;
+}
+
+section header #header .header-home .header-search-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+section header #header .header-home .header-search-icon input{
+	width: 220px;
+	height: 20px;
+	border: 1px solid transparent;
+	outline: none;
+	background-color: #eceff1;
+	padding: 5px;
+	transition: 2s linear;
+}
+
+section header #header .header-home .header-search-icon i{
+	position: relative;
+	top: 2px;
+    right: 35px;
+	cursor: pointer;
+}
+
+section header #header .header-home .header-search-icon input:focus{
+	border: 1px solid #070707;
+	color: #000000;
+	
+}
+section header #header .header-home .header-search-icon input::placeholder{
+	color: #282c31;;
+}
+section header #header .header-home .header-search-icon input:focus::placeholder{
+	opacity: 0;
+}
+
+section header #header .header-home .header-search-icon .icon{
+	display: flex;
+	gap: 30px;
+}
+
+section #slide {
+	display: flex;
+	overflow: hidden;
+	animation: slide 20s infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes slide{
+	25%{
+		margin-left: 0;
+	}
+
+	50%{
+		margin-left: -100%;
+	}
+
+	75%{
+		margin-left: -200%;
+	}
+
+	100%{
+		margin-left: -300%;
+	}
+
+	
+}
+
+
+  
+
+ 
+ 
